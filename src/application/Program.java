@@ -39,6 +39,12 @@ public class Program {
 		seller.setName("Claudin do Pneu");
 		sellerDao.update(seller);
 		System.out.println(seller);
+		
+		System.out.println("\n=== TEST 6: seller delete ===");
+		sellerDao.deleteById(13);
+		sellerDao.deleteById(14);
+		sellerDao.deleteById(15);
+		sellerDao.deleteById(22);
 	}
 	
 }
